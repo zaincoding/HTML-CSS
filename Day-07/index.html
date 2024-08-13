@@ -1,0 +1,38 @@
+
+The "form" < form> element carry on  "action"  & "method" attributes & contain the controls of user input or infomation.<br />
+the "action" attribute inidcate where the form data is to be send after the form submition.<br /><br />
+The "method" attribute specify HTTP method to send data which is "get" & "post".<br /><br />
+"get" method is the default value. in get method the value of the submited form is visible in the addressbare.<br />
+it is useful for non-secure data only.<br />
+it size is limited to about 3000 characters.<br />
+this method support bookmark the result.<br /> <br />
+
+
+
+
+<form  action="http://www.example/login.py">
+ <p>Username:
+    <input type="text" name="Username" size="12"></p>
+<p>Password:
+	<input type="password" name="Password" size="12"></p>
+	<p><input type="Submit" value="Submit"></p>
+
+</form>
+
+
+
+
+
+
+
+
+the "input" element create several different forms control.<br />
+when the "type" attribute has a "text" value it creats a box of  a single line text input.<br />
+the sever use "name" attribute to identify which data corresponds to which form controls.<br />
+the "size" attribute is use to define the size of the box.But the modern way is to define in css.<br /><br />
+
+when the "type" attribute has a "Password" value it creat a box of a signle line text input the characters are hidden in dots or asterisks form.<br />
+the sever use "name" attribute to identify which data corresponds to which form controls.<br />
+
+the type="Submit" button send the form data to the server.
+the value="submit" value attribute is used to control the text appear on the button.

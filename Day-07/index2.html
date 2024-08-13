@@ -1,0 +1,78 @@
+
+<strong>TEXT AREA</strong><br />
+the < textarea> element is used to create muylti-line text input.<br />
+the "textarea" has opening < textarea> & clossing < textarea/> tags,the text b/w the tags will appear in the box.<br />
+it has "cols" and "rows" attribute which define it's size in columns and rows.but now the cols and rows are define in css.<br />
+<hr />
+<form action="http://www.example.com/comment.py"> 
+<p>Your Comments </p>
+<textarea name="comments"  cols="25" rows="5">Leave your comment here...</textarea>
+<p>
+<input type="submit"  value="submit"/></p>
+</form>
+
+<hr />
+<strong>RADIO BUTTON</strong><br />
+The radio button is used to select one option.<br />
+Its "type" attribute value "radio".
+The "name" value should be the same of a question options, as all names attributeas values are same(name="color")<br />
+The value of each button in a group should be different like ,value="black", value="blue", value="Yellow".<br />
+The value of the "checked" attribute is a default value, it will be sent to the server if the user not select any value.<br />
+The "name" and "value" attributes values will be sent to the server after submition of the form, like color=Yellow.<br />
+
+
+
+<form action="http://www.example.com/comment.py"> 
+<p>Please select your favourite color.
+<input type="radio" name="color" value="Black"  checked="checked"/>Black
+<input type="radio" name="color" value="green"/>Green
+<input type="radio" name="color" value="Yellow"/>Yellow
+<input type="Submit"  value="submit" />
+</p>
+</form>
+<hr />
+<strong>CHECK BOX</strong><br />
+The checkbox allow to select none, one, or many options.<br />
+Its "type" attribute value "checkbox". Other than that it work similarly as the radio button.<br />
+<form action="http://www.example.com/comment.py"> 
+<p>Please select your favourite color.
+<input type="checkbox" name="color" value="Black"  checked="checked"/>Black
+<input type="checkbox" name="color" value="green"/>Green
+<input type="checkbox" name="color" value="Yellow"/>Yellow
+<input type="submit"  value="submit" />
+</p>
+</form>
+<hr />
+<strong>DROP DOWN LIST BOX</strong><br />
+The < select> element with attribute name is use to create drop down box.It allow user to select one of the drop down list.<br />
+The "name" and "option" attributes values will be sent to the server after the submition of the form, like color=green.<br />
+The "option" element has opening< option> and closing< /option> tags the words b/w the tags shown to the user for selection.
+<form action="http://www.example.com/comment.py"> 
+<p>Please select your favourite color.</p>
+<select name="colors">
+<option value="Black"/>Black</option>
+<option value="green"/>Green</option>
+<option value="Yellow"/>Yellow</option>
+</select>
+<input type="submit"  value="submit" />
+</p>
+</form>
+
+<hr />
+<strong>MULTI SELECT BOX</strong><br />
+The multi select use the same elements "select" & "option" as "drop down list box".<br />
+But < select> element has two more attributes such as size & multiple.<br />
+The "size" attribute show the number of options list.<br />
+the "multiple" attribute allow the user to select multiple option at once.<br />"press shift key and select potions".<br />
+<form action="http://www.example.com/comment.py"> 
+<p>Please select your favourite color.</p>
+<select name="colors" size="3" multiple="multiple" />
+<option value="Black"/>Black</option>
+<option value="green"/>Green</option>
+<option value="Yellow"/>Brown</option>
+<option value="Yellow"/>Yellow</option>
+</select>
+<p>
+<input type="submit"  value="submit" />
+</p>
+</form>
