@@ -1,0 +1,37 @@
+To use the image as button use the src "attribute" with value image path.
+To control the image size of the button use width & hight attribute.
+
+<form action="http://www.example.org/subscribe.py">
+    <p>subscribe to our email list:</p>
+    <input type="text" name="email"/>
+    <p></p><input type="image" src="images/subscribe.png"/></p>
+</form>
+<hr/>
+ 
+ in this form < button> element is ued it allow the user to get more control over the button appearence.<br />
+ in this form < input> element use the controls which is not visible to the user.it use to know from which page the user submiting form.<br />
+<form action="http://www.example.org/subscribe.py"/>
+<button><img src="images/Sub.png" height="add" width="12" height="10"/>add</button>
+<input type="hidden" name="bookmark" value="Tablets"/>
+
+</form>
+
+<hr />
+
+The < label> element is assocaited with the forms controls,each form should have their label controls.<br />
+It helpful for vision-impired users the screen reader will read the input when the user focus on form input,<br />
+the input "id" and label "for" valuse should be same<br />
+The "for" attribute in label element is use to assocaite lable with the input or assocaite input element with label<br />
+The value of the "for" attribute is the id of the input that it is assocaited with.<br />
+<hr />
+
+<form action="http://www.example.org/subscribe.py"/>
+<label>Age:<input type="text" name="age"/></label>
+<br />
+Gender:
+<input id="female" type="radio" name="gender" value="f"/>
+<label for="female">female</label>
+
+<input id="male" type="radio" name="gender" value="m"/>
+<label for="male">Male</label>
+</form>

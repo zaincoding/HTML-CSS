@@ -1,0 +1,34 @@
+
+
+To group together related form controls < fieldset>element is used.
+The "legend" element is used for caption to identify the the purpose of that group form.
+<form action="http://www.example.org/subscribe.py">
+<fieldset>
+ <legend> Contact detail </legend>
+<label>Mobile<br />
+<input type="text" name="mobile" /></label><br />
+<label>Telephone<br />
+<input type="text" name="telephone"/></label><br />
+<label>Email:<br />
+<input type="email" name="email"/></label>
+</fieldset>
+</form>
+
+<hr />
+
+"post" in post method the value of the submited form is not visible in address bare.<br />
+it append data inside the body of the HTTP request.<br />
+it has no size limitation.<br />
+this method does not support bookmark the value.<br />
+<form action="http://www.example.org/subscribe.py" method="post">
+<label for="username">Username:</label>
+<input type="text" name="username" required="required"/><br />
+<label for="Password">Password :</label>
+<input type="Password" name="Password" required="required"/><br />
+
+<input type="submit" value="Submit"/>
+ 
+</form>
+
+The "required" attribute is used to validate the input field,if the form control is not filled correctly,<br/>
+it will not allow the user to submit the form.
